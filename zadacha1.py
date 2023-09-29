@@ -16,7 +16,7 @@ print("Результат для максимизации:")
 for variable in problem_max.variables():
     print(variable.name, "=", variable.varValue)
 
-print("Max:")
+print("Оптимальное значение для переменных x:")
 print(pulp.value(problem_max.objective))
 
 stop = time.time()
